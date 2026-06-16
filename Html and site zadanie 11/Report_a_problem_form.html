@@ -1,0 +1,68 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Problem</title>
+    <link rel="stylesheet" href="Report_a_problem_form.css">
+</head>
+<body>
+    <div class="form-container">
+        
+        <h1>Report a Problem</h1>
+        
+        <form action="#" method="post">
+            <h2>Select Problem Type</h2>
+            <div class="problem-type">
+                <div class="problem-option">
+                    <input type="radio" id="translation-error" name="problem-type" value="translation-error" required>
+                    <label for="translation-error">Translation error</label>
+                </div>
+                <div class="problem-option">
+                    <input type="radio" id="wrong-borders" name="problem-type" value="wrong-borders" required>
+                    <label for="wrong-borders">Wrong borders</label>
+                </div>
+                <div class="problem-option">
+                    <input type="radio" id="missing-region" name="problem-type" value="missing-region" required>
+                    <label for="missing-region">Missing region</label>
+                </div>
+                <div class="problem-option">
+                    <input type="radio" id="wrong-link" name="problem-type" value="wrong-link" required>
+                    <label for="wrong-link">Wrong link</label>
+                </div>
+                <div class="problem-option">
+                    <input type="radio" id="not-working" name="problem-type" value="not-working" required>
+                    <label for="not-working">Does not work at all</label>
+                </div>
+                <div class="problem-option">
+                    <input type="radio" id="other" name="problem-type" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <h2>Describe the Problem in Detail</h2>
+            <div class="problem-section">
+                <div class="problem-hint">Please provide detailed information about the issue:</div>
+                <textarea id="problem" name="problem" placeholder="Enter your detailed description here..." required></textarea>
+            </div>
+
+            <h2>Add Screenshot (Optional)</h2>
+            <div class="screenshot-section">
+                <div class="screenshot-hint">Insert a screenshot if available:</div>
+                <div class="file-upload">
+                    <input type="file" id="screenshot" name="screenshot" accept="image/*">
+                </div>
+            </div>
+
+            <h2>Your Contact Information</h2>
+            <div class="email-section">
+                <input type="email" class="email-input" id="email" name="email" placeholder="your.email@example.com" required>
+                <div class="email-hint">The Whole World - We'll contact you if needed</div>
+            </div>
+
+            <button type="submit" class="submit-button">Submit Report</button>
+        </form>
+        
+        <div class="logo">The Whole World</div>
+    </div>
+</body>
+</html>
