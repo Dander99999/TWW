@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(217, 217, 217, 1);
+    margin: 0;
+    padding: 0;
+}
+.header-container{
+    background: rgba(217, 217, 217, 1);
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+}
+.header-container ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    width: 100%;
+}
+.header-container a{
+    color:black;
+    text-decoration: none;
+    padding-left: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    transition: transform 0.5s;
+}
+.header-container a:hover{
+    color:rgba(64, 223, 112, 1);
+    transform: scale(1.1);
+}
+.Settings{
+    margin-right: auto;
+}
+.Report_a_problem{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

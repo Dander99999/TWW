@@ -1,0 +1,118 @@
+body {
+    background-color: #79b5f5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+    color: #305070;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.two-column-layout {
+    display: flex;
+    margin-top: 20px;
+}
+
+.login-form-section {
+    flex: 2;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.login-form-section h3 {
+    color: #305070;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #305070;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #305070;
+    box-shadow: 0 0 5px rgba(48, 80, 112, 0.3);
+}
+
+.submit-button {
+    background-color: #305070;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #3a5a80;
+}
+
+@media (max-width: 768px) {
+    .two-column-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .login-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px;
+    }
+    
+    .page-header {
+        font-size: 20px;
+    }
+    
+    .form-group input {
+        padding: 10px;
+    }
+}
